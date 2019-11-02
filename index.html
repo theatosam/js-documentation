@@ -33,8 +33,7 @@
             <section id="Hello_world" class="main-section">
               <header>Hello world</header>
               <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
-              <div class="code-container"><code>function greetMe(yourName) { alert("Hello " + yourName); }
-        greetMe("World");</code></div>
+              <div class="code-container"><code>function greetMe(yourName) { alert("Hello " + yourName); }<br>greetMe("World");</code></div>
               <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
             </section>
             <section id="Variables" class="main-section">
@@ -62,7 +61,7 @@
               <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
               <div class="code-container"><code>if (true) { var x = 5; } console.log(x); // 5</code></div>
               <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
-              <div class="code-container"><code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined</code></div>
+              <div class="code-container"><code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not<br>defined</code></div>
             </section>
             <section id="Global_variables" class="main-section">
               <header>Global variables</header>
@@ -76,9 +75,7 @@
               <p>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.</p>
               <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
               <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
-              <div class="code-container"><code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
-        CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
-        }</code></div>
+              <div class="code-container"><code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL<br>CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements<br>}</code></div>
               <p>However, object attributes are not protected, so the following statement is executed without problems.</p>
               <div class="code-container"><code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code></div>
             </section>
